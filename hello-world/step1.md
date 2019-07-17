@@ -59,14 +59,14 @@ repositories {
 Create the hello world example in App.java:
 
 <pre class="file" data-filename="helloworld/src/main/java/helloworld/App.java" data-target="replace">
-
+package helloworld;
 //an example: hello world
 import java.io.IOException;
 
 import com.arm.mbed.cloud.sdk.common.MbedCloudException;
 import com.arm.mbed.cloud.sdk.devices.model.DeviceListDao;
 import com.arm.mbed.cloud.sdk.devices.model.DeviceListOptions;
-package helloworld;
+
 public class App {
 
     public static void main(String[] args) {
