@@ -1,14 +1,8 @@
 Run your first Java application using the SDK for Pelion Device Management.
 
 ## Installation
-If using Gradle, you can **initialise your project**, as follows
-`curl -s "https://get.sdkman.io" | bash`{{execute}}
 
-`sdk install gradle`{{execute}}
-
-`gradle init --type java-application`{{execute}}
-
-Then, add the following dependency to _build.gradle_ file (change 'x', 'y' and 'z' by the appropriate version numbers)
+Modify _build.gradle_ file to set the SDK as a dependency (change 'x', 'y' and 'z' by the appropriate version numbers)
 
 <pre class="file" data-filename="build.gradle" data-target="replace">
 /*
@@ -33,7 +27,7 @@ mainClassName = 'App'
 dependencies {
     // This dependency is found on compile classpath of this component and consumers.
     implementation 'org.slf4j:slf4j-nop:1.7.25'
-    implementation 'com.arm.mbed.cloud.sdk:mbed-cloud-sdk:>>Enter the version of the SDK<<'
+    implementation 'com.arm.mbed.cloud.sdk:mbed-cloud-sdk:x.y.z'
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
