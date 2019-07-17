@@ -7,5 +7,5 @@ sdk install gradle
 cd ~
 mkdir helloworld
 cd ./helloworld
-gradle init --type java-application
+gradle init --type java-application -q
 gradle wrapper
