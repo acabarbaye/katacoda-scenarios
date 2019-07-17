@@ -91,7 +91,7 @@ public class App {
 
 first build
 
-`./gradlew build`{{execute}}
+`./gradlew build -x test`{{execute}}
 
 then run
 
