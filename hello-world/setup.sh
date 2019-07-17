@@ -4,5 +4,6 @@ curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
 sdk install gradle
+cd ~
 gradle init --type java-application
 gradle wrapper
