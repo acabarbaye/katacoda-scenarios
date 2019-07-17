@@ -1,8 +1,16 @@
 Run your first Java application using the SDK for Pelion Device Management.
 
 ## Installation
+### Environment setup
+Wait for the development environment to be fully set up
 
-Modify _build.gradle_ file to set the SDK as a dependency (change 'x', 'y' and 'z' by the appropriate version numbers)
+### Project definition
+
+Open _helloworld/build.gradle_ in the editor.
+
+Modify _helloworld/build.gradle_ file to set the SDK as a dependency (change 'x', 'y' and 'z' by the appropriate version numbers)
+
+Change line `implementation 'com.arm.mbed.cloud.sdk:mbed-cloud-sdk:x.y.z'`
 
 <pre class="file" data-filename="helloworld/build.gradle" data-target="replace">
 /*
