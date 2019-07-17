@@ -1,6 +1,7 @@
 Run your first Java application using the SDK for Pelion Device Management.
 
 ## Installation
+
 ### Environment setup
 Wait for the development environment to be fully set up
 
@@ -84,7 +85,8 @@ public class App {
 </pre>
 
 
-## Run
+### Run
+
 first build
 `./helloworld/gradlew build`{{execute}}
 `./helloworld/gradlew run`{{execute}}
