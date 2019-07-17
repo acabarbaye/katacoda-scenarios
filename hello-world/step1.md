@@ -1,6 +1,6 @@
 Run your first Java application using the SDK for Pelion Device Management.
 
-## Installation
+## Installation
 
 ### Environment setup
 Wait for the development environment to be fully set up
