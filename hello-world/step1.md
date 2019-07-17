@@ -2,6 +2,7 @@ Run your first Java application using the SDK for Pelion Device Management.
 
 ## Installation
 If using Gradle, you can **initialise your project**, as follows
+`curl -s "https://get.sdkman.io" | bash`{{execute}}
 
 `gradle init --type java-application`{{execute}}
 
