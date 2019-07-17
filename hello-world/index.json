@@ -10,8 +10,7 @@
     }],
     "intro": {
       "text": "intro.md",
-      "sdkman": "curl -s 'https://get.sdkman.io' | bash",
-      "gradle": "sdk install gradle",
+      "courseData": "setup.sh",
       "credits": ""
     },
     "finish": {
