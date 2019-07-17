@@ -90,5 +90,5 @@ public class App {
 ### Run
 
 first build
-`./helloworld/gradlew build`{{execute}}
-`./helloworld/gradlew run`{{execute}}
+`./gradlew build`{{execute}}
+`./gradlew run`{{execute}}
