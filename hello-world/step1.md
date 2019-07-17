@@ -48,3 +48,43 @@ repositories {
     jcenter()
 }
 </pre>
+
+
+
+### Hello World
+
+Create the hello world example in App.java:
+
+<pre class="file" data-filename="helloworld/src/main/java/helloworld/App.java" data-target="replace">
+
+//an example: hello world
+import java.io.IOException;
+
+import com.arm.mbed.cloud.sdk.common.MbedCloudException;
+import com.arm.mbed.cloud.sdk.devices.model.DeviceListDao;
+import com.arm.mbed.cloud.sdk.devices.model.DeviceListOptions;
+package helloworld;
+public class App {
+
+    public static void main(String[] args) {
+
+        try (DeviceListDao dao = new DeviceListDao()) {
+
+            // Listing the first 10 devices on your Pelion Device Management account
+            dao.list((new DeviceListOptions()).maxResults(10))
+               .forEach(device -> System.out.println("Hello device " + device.getName()));
+
+        } catch (MbedCloudException | IOException exception) {
+            exception.printStackTrace();
+        }
+    }
+
+}
+// end of example
+</pre>
+
+
+## Run
+first build
+`./helloworld/gradlew build`{{execute}}
+`./helloworld/gradlew run`{{execute}}
